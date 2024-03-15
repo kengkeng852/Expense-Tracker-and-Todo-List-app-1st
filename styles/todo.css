@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {  
+    width: 100%; 
+    margin-top: 0px;
+    min-height: 90vh;
+    background-image: url(/images/zengarden.jpeg); 
+    background-size: cover;
+    background-position: center;
+    position: relative; /* to center white box*/
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.todobox { 
+    background-color: white;        
+    width: 400px;  
+    height: 600px; 
+    position: absolute;        
+    top: 50%;                 
+    left: 50%;                 
+    transform: translate(-50%, -50%);        
+    border-radius: 8px; 
+
+}
+
+.head {
+    border-radius: 8px 8px 0px 0px;
+    padding: 10px; 
+    width: 100%;
+    background-color: #D5CB8E ;
+} 
+
+.header{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.head h2{
+    text-align: center;
+}
+
+.newtodo {
+    width: 100%;
+    height: 50px;
+    padding: 0.25rem 0;
+}
+
+.newtodo form {
+    display: flex;
+    align-items: center;
+}
+
+.newtodo form input {
+    flex: 1;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-right: 0px;
+    outline: transparent;
+    padding-left: 0.5rem;
+    font-size:1.3rem;
+    color: #2E3D17;
+}
+
+.newtodo form button {
+    width: 60px;
+    height: 40px;
+    font-size: 30px;
+    background-color: transparent;
+    color: #6D492F;
+    border: none;
+    border-left: 0px;
+    cursor: pointer;
+}
+
+#todolist {       
+    padding: 20px;
+    overflow: scroll;
+    height: 100%;
+}
+
+#todolist .todo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: space-between; 
+    font-size: 20px;   
+}
+
+#todolist .todo:hover {
+    background-color: #D3E171;
+}
+
+#todolist .todo * {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+#todolist .todo i {
+    font-size: 1.2rem;
+}
+
+#todolist .todo p {
+    flex: 1;
+    word-break: break-all;
+}
+.checked {
+    color: grey;
+    text-decoration: line-through;
+ }
+
+#todolist .todo .bi-trash {
+    color: rgb(247, 124, 124);
+    margin: 0;
+} 
+
+#todolist .todo .bi-pencil-square {
+    color: rgb(74, 196, 88);
+}
+

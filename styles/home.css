@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding:0;
+    font-family: 'Poppings', sans-serif;
+    outline: none ;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header {
+    top: 0; left: 0; right:0;
+    background-color: #9daa74;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 555;
+}
+
+header .logo{
+    font-size: 2rem;
+    color:#5a5b6d;
+    font-weight: bolder;
+}
+
+
+header .navbar a{
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    color: white;
+}
+
+header .navbar a:hover {
+    color: #D5CB8E;
+}
+
+header #toggle {
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    min-height: 90vh;
+    background-image: url(/images/zengarden.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+
+    max-width: 50rem;
+    background-color: white;
+    border-radius: 13px;
+    padding: 2%;
+    align-content: center;
+    text-align: justify;
+}
+
+.home .content h3{
+    font-size: 2rem;
+    color: #a8b175;
+}
+
+.home .content span {
+    font-size: 1rem;
+    color: #575a46;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>KengyAppTodoList</title>
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/todo.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">Kengy<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="todo.html">TodoList</a>
+            <a href="expense.html">ExpenseTracker</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="todobox" id="todobox">
+            <div class="head">
+                <div class="header">
+                    <h2>To Do List</h2>
+                </div>
+                <div class="newtodo">
+                    <form id="todoform">
+                        <input type="text" name="newtodoinput" id="newtodoinput" placeholder="Keng have to do .....">
+                        <button type="submit">
+                            <i class="bi bi-plus-circle-dotted"></i>
+                        </button>                       
+                    </form>
+                </div>
+            </div>
+            <div id="todolist">
+                
+            </div> 
+        </section>
+    </div>
+    <script src="/scripts/todo.js"></script>
+</body>
+</html>
